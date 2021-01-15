@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test On Chrome(failed)">
+    <parameter name="BrowserName" value="chrome"/>
+    <classes>
+      <class name="pe.edu.galaxy.doLoginMultiBrowser">
+        <methods>
+          <include name="tearDown"/>
+          <include name="makeReports"/>
+          <include name="deleteCookies"/>
+          <include name="setup"/>
+          <include name="doLoginHRM"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- pe.edu.galaxy.doLoginMultiBrowser -->
+    </classes>
+  </test> <!-- Test On Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
